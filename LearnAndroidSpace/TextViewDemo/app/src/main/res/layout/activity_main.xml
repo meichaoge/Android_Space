@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#615858"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView001"
+        android:layout_width="282dp"
+        android:layout_height="189dp"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="Hello World!"
+        android:textAlignment="center"
+        android:textColor="#ff1100"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        android:shadowColor="#00FF00"
+        android:shadowRadius="3.0"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        />
+
+
+    <TextView
+        android:id="@+id/textView002"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+
+        android:shadowColor="#F9F900FF"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:shadowRadius="3.0"
+        android:text="带阴影的TextView"
+        android:textColor="#4A4AFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView003"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义矩形边框"
+        android:background="@drawable/textviewsharp1"
+        android:layout_below="@id/textView002"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView004"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义圆角边框"
+        android:background="@drawable/textviewshap2"
+        android:layout_below="@id/textView003"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- 设置带有图片的TextView，要改变图片大小需要在java 代码中修改-->
+    <TextView
+        android:id="@+id/textView005"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置上下左右带有4张图片的"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawableTop="@drawable/ic_launcher_background"
+        android:drawableLeft="@drawable/ic_launcher_background"
+        android:drawablePadding="1dp"
+        />
+
+    <TextView
+        android:id="@+id/textView006"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:layout_below="@id/textView004"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/textView007"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:layout_below="@id/textView006"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textView008"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:layout_below="@id/textView007"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textView009"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:layout_below="@id/textView008"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--走马灯效果-->
+    <TextView
+    android:id="@+id/textView0010"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView009"
+    android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="你整天说着日了狗日了狗，但是你却没有来，呵呵呵呵呵呵呵呵呵呵~"
+        />
+
+
+</RelativeLayout>
