@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#777575"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/penny_bank"/>
+
+    <!--fitXY 保对图像的横向与纵向进行独立缩放,使得该图片完全适应ImageView,但是图片的横纵比可能会发生改变-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/penny_bank"/>
+
+    <!--fitStart 保持纵横比缩放图片,知道较长的边与Image的编程相等,缩放完成后将图片放在ImageView的左上角。-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/penny_bank"/>
+
+    <!--同上,缩放后放于中间;-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/penny_bank"/>
+
+    <!--同上,缩放后放于右下角-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        android:src="@drawable/penny_bank"/>
+
+    <!--center 保持原图的大小，显示在ImageView的中心。当原图的size大于ImageView的size，超过部分裁剪处理。-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/penny_bank"/>
+
+    <!--centerCrop 保持横纵比缩放图片,直到完全覆盖ImageView,可能会出现图片的显示不完全 -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/penny_bank"/>
+
+    <!--centerInside 保持横纵比缩放图片,直到ImageView能够完全地显示图片 -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/penny_bank"/>
+
+    <!--matrix 默认值，不改变原图的大小，从ImageView的左上角开始绘制原图， 原图超过ImageView的部分作裁剪处理-->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/penny_bank"/>
+</LinearLayout>
