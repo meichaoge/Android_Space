@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="friuit">
+        <item name="苹果" />
+        <item name="香蕉" />
+        <item name="橘子" />
+        <item name="葡萄" />
+
+    </string-array>
+
+</resources>
